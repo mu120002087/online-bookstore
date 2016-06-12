@@ -1,21 +1,171 @@
 <!DOCTYPE html>
 <html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>鏄熷厜涔﹀煄</title>
-<style>
-form {
-	
+
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+ <meta http-equiv="pragma" content="no-cache" />
+ <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+<title>星光书城</title>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+	background: white url('top-navi-white.gif') repeat-x;
+	font:18px/2.0arial;
+	}
+a{
+text-decoration:none;<!--去掉超链接下划线-->
+color:#3D81B4;
 }
+	
+/*******************Header***************************************/	
+
+.header{
+position:relative;
+width:960px;
+height:138px;
+margin:0 auto;
+font:25px/1.6arial;
+}
+.header .logo a{
+position:absolute;
+top:10px;
+left:0px;
+}
+.header .logo-title{
+position:absolute;
+top:50px;
+left:130px;
+font-size:40px;
+}
+.header .have-account{
+position:absolute;
+top:80px;
+right:0px;
+font-size:18px;
+}
+/*******************Footer***************************************/
+.footer{
+	clear:both;
+	height:53px;
+	margin:0;
+	background:transparent url('footer-background.png') repeat-x;
+	text-indent:0px;
+	text-align:center;
+}
+.footer p{
+	margin:0px;
+}
+.footer a{
+	color:blue;
+}
+.footer .p1{
+	line-height:23px;
+}
+.footer .p2{
+	line-height:30px;
+}
+/*******************bodyler***************************************/
+.bodyler{
+width:360px;
+height:550px;
+margin:0 auto;
+}
+.bodyler div{
+font-size:18px;
+height:30px;
+text-decoration:none;
+}
+.bodyler .btn-register{
+background-color:red;
+width:276px;
+height:53px;
+font-size:36px;
+}
+input {
+ size:40px;
+}
+
+.bodyler .form-item{
+padding: 1em 2em 1em 2em;
+-webkit-border-radius:.3em;
+-moz-border-radius: .3em;
+border: 1px solid #999;
+
+}
+
+
 </style>
 </head>
-<body>
-	<h2>鏍囬2</h2>
-	<form>
-		<input type="text" value="username"/><br>
-		<input type="password" value="password"/><br>
-		<input type="submit" value="Login"/>
 
-	</form>
+<body>
+ 
+<div class="header">
+        <div class="logo"><a href="//www.xgsc.com"><img src="xingguang-logo.gif" width="128" height="128" /></a></div>
+        <div class="logo-title" >欢 迎 注 册</div>
+        <div class="have-account">已有账号 <a href="//passport.jd.com/new/login.aspx">请登录</a></div>
+</div>
+
+
+<div class="bodyler"> 
+<div class="inre">
+	<form action="" id="register-form" method="post">	  
+	<div class="form-item" id="form-item-account">
+		<label>用　户　名</label>
+            <input type="text" id="form-account" name="regName"  class="field" style="height:40px" autocomplete="off" maxlength="20"
+                placeholder="您的账户名和登录名"  />
+                <i class="i-status"></i>
+                </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+    <div class="form-item">
+        <label>设 置 密 码</label>
+            <input style="display:none" type="password" name="pwd" class="fakeinput"/>
+            <input type="password" name="pwd" id="form-pwd" class="field"  style="height:40px" maxlength="20"
+                placeholder="建议至少使用两种字符组合" />
+                <i class="i-status"></i>
+                </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+    <div class="form-item">
+        <label>确 认 密 码</label>
+            <input style="display:none" type="password" name="pwdRepeat" class="fakeinput" />
+            <input type="password" name="pwdRepeat" id="form-equalTopwd" class="field"  style="height:40px" placeholder="请再次输入密码"
+                maxlength="20" />
+                <i class="i-status"></i>
+                </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+               
+    <div class="form-item">
+        <label>邮 箱 设 置</label>
+            <input type="text" name="email" id="form-email" class="field ignore" style="height:40px" autocomplete="off"  placeholder="建议使用常用邮箱" id="email-input"/>
+                 <i class="i-status"></i></div>
+				 <div class="input-tip">
+                    <span></span>
+                </div>
+	<div class="form-item">
+		<label class="select-country" id="select-country" country_id="0086">中 国 + 86<a href="javascript:void(0) "class="arrow"></a></label>
+            <input type="text" id="form-phone" name="phone" class="field" style="height:40px" placeholder="建议使用常用手机"
+                autocomplete="off" maxlength="11"/></div>
+	<div>
+		<input type="checkbox" name="agreen" checked=""/>我已阅读并同意<a href="javascript:;" id="protocol">《书城用户注册协议》</a> </div>
+	<div>
+        <button type="submit" class="btn-register">立即注册</button>
+           </div>
+ </form>
+ </div>
+</div>
+
+
+<div class="footer">
+    <p class="p1"><a href="#">网站首页</a> | <a href="#">产品介绍</a> | <a href="#">信息</a> | <a href="#">畅销畅销榜</a></p>       
+	<p class="p2"> Copyright&copy;2016-2028&nbsp;&nbsp;星光书城xgsc.com&nbsp;版权所有</p>
+</div>
+
 </body>
 </html>
